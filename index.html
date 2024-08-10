@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web to Lead Form</title>
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -17,6 +18,8 @@
         <input type=hidden name="oid" value="00DdM000001o0U6">
         <input type=hidden name="retURL" value="https://sfdcdeveloper-08.github.io/Web-To-Lead-Project/thanks.html">
         <input type=hidden name="LeadDate__c" class="outputDate">
+        <input type=hidden name='captcha_settings'
+            value='{"keyname":"LeadToWebProject","fallback":"true","orgId":"00DdM000001o0U6","ts":""}'>
         <label for="first_name"> First Name </label><input id="first_name" maxlength="40" name="first_name" size="20"
             type="text" required="true" /><br>
 
@@ -32,7 +35,7 @@
             size="20" type="date" required="true" />
 
         <input type="submit" name="submit" class="submit">
-
+        <div class="g-recaptcha" data-sitekey="6Ld34CMqAAAAAJEzEfKbU_D91b_n-pU4IJaq_-o7"></div><br>
     </form>
 </body>
 
